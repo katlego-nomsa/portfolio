@@ -1,0 +1,99 @@
+
+:root {
+  --dark-slate: hsl(202, 19%, 20%);
+  --darker-slate: hsl(203, 21%, 15%);
+  --neon-cyan: hsl(184, 100%, 50%);
+  --light-blue: hsl(192, 70%, 64%);
+  --muted-teal: hsl(192, 29%, 37%);
+  --off-white: hsl(213, 71%, 90%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-image: url(riead_background.svg);
+  
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  margin-bottom: 40px;
+}
+
+
+.nav ul {
+  align-items: center;
+  list-style: none;
+  gap: 35px;
+  margin:0;
+  padding:0;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+
+.nav ul li {
+  float: left;
+}
+.nav ul li a:hover {
+  background-color: #111111;
+}
+
+
+.nav ul li a {
+  display: block;
+  color: grey;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.hero-info h1{
+  color:var(--off-white);
+}
+.hero-info h2{
+  padding-top: 20px;
+  color:var(--off-white);
+}
+.hero-info p{
+  padding-top: 20px;
+  color:var(--off-white);
+  padding-bottom: 20px;
+
+}
+.strong{
+  color:var(--neon-cyan);
+}
+.icons{
+  justify-content:space-between;
+  gap:20px;
+  font-size:x-large;
+  color: var(--light-blue);
+  
+}
+.buttons{
+  margin-top: 20px;
+}
+.btn{
+
+  background-color: var(--light-blue);
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 20px;
+  justify-content: space-between;
+  gap:30px;
+}
+.hero{
+  margin-top: 20px;
+}
