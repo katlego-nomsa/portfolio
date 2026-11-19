@@ -18,9 +18,43 @@
 body{
     background-color: var(--dark-slate);
 }
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  margin-bottom: 40px;
+}
+
+
+.nav ul {
+  align-items: center;
+  list-style: none;
+  gap: 35px;
+  margin:0;
+  padding:0;
+  overflow: hidden;
+}
+.nav ul li {
+  float: left;
+}
+.nav ul li a:hover {
+  color: #111111;
+}
+
+
+.nav ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
 .headings{
-    color:var(--off-white);
+    color:white;
     text-align: center;
+}
+.strong{
+    color: var(--light-blue);
 }
 .main{
   display: flex;
@@ -42,11 +76,15 @@ body{
 .skills {
   width: 70%;
     margin: 40px 0;
+    align-items: center;
 }
 .main .skill-box{
     width: 70%;
     margin: 40px 0;
     
+}
+.nav ul li a.active {
+  background-color: var(--light-blue);
 }
 .skill-box .title{
     display: block;

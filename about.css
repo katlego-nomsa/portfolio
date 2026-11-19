@@ -16,8 +16,11 @@ body{
     background-color: var(--dark-slate);
 }
 .heading{
-    color:var(--off-white);
+    color:white;
     text-align: center;
+}
+.strong{
+  color: var(--light-blue);
 }
 .container {
   max-width: 1200px;
@@ -25,9 +28,9 @@ body{
   margin: 0 auto;
   padding: 60px 0;
 }
-
 .nav {
-  justify-content: center;
+  display: flex;
+  justify-content: space-between;
   align-content: center;
   margin-bottom: 40px;
 }
@@ -44,9 +47,42 @@ body{
 .nav ul li {
   float: left;
 }
-
+.nav ul li a:hover {
+  color: #111111;
+}
+.nav ul li a.active {
+  background-color: var(--light-blue);
+}
 
 .nav ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.nav1 {
+  justify-content: center;
+  align-content: center;
+  margin-bottom: 40px;
+}
+
+
+.nav1 ul {
+  align-items: center;
+  list-style: none;
+  gap: 35px;
+  margin:0;
+  padding:0;
+  overflow: hidden;
+}
+.nav1 ul li {
+  float: left;
+}
+
+
+.nav1 ul li a {
   display: block;
   color: white;
   text-align: center;
@@ -70,4 +106,8 @@ body{
 }
 .paragraphs{
     color:white;
+}
+ .image img{
+  width: 500px;
+  height:500px;
 }

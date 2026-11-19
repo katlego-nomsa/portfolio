@@ -46,27 +46,30 @@ body{
   float: left;
 }
 .nav ul li a:hover {
-  background-color: #111111;
+  color: #111111;
+}
+.nav ul li a.active {
+  background-color: var(--light-blue);
 }
 
 
 .nav ul li a {
   display: block;
-  color: grey;
+  color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 .hero-info h1{
-  color:var(--off-white);
+  color:white;
 }
 .hero-info h2{
   padding-top: 20px;
-  color:var(--off-white);
+  color:white;
 }
 .hero-info p{
   padding-top: 20px;
-  color:var(--off-white);
+  color:white;
   padding-bottom: 20px;
 
 }
@@ -82,9 +85,13 @@ body{
 }
 .buttons{
   margin-top: 20px;
+  
+}
+.btn-download{
+  text-decoration: none;
+  color:black;
 }
 .btn{
-
   background-color: var(--light-blue);
   padding-right: 10px;
   padding-left: 10px;
@@ -93,7 +100,14 @@ body{
   border-radius: 20px;
   justify-content: space-between;
   gap:30px;
+  border:none;
 }
 .hero{
+  display: flex;
+  justify-content: space-between;
   margin-top: 20px;
+}
+ .image img{
+  width: 500px;
+  height:500px;
 }

@@ -1,0 +1,160 @@
+
+:root {
+  --dark-slate: hsl(202, 19%, 20%);
+  --darker-slate: hsl(203, 21%, 15%);
+  --neon-cyan: hsl(184, 100%, 50%);
+  --light-blue: hsl(192, 70%, 64%);
+  --muted-teal: hsl(192, 29%, 37%);
+  --off-white: hsl(213, 71%, 90%);
+}
+
+* { margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+}
+  body { background: var(--dark-slate); 
+  }
+    
+
+  .contact {
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 90%;
+    padding: 60px 0;
+  }
+
+  .contact h2 {
+    text-align: center;
+    color: #fff;
+    font-size: 28px;
+    margin-bottom: 50px;
+  }
+
+  .contact h2 span { color: var(--light-blue) }
+
+  .content {
+    display: flex;
+    gap: 60px;
+    align-items: flex-start;
+  }
+
+  
+  .left {
+    flex: 1;
+    padding-top: 10px;
+  }
+  .nav {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  margin-bottom: 40px;
+}
+
+
+.nav ul {
+  align-items: center;
+  list-style: none;
+  gap: 35px;
+  margin:0;
+  padding:0;
+  overflow: hidden;
+}
+.nav ul li {
+  float: left;
+}
+.nav ul li a:hover {
+  color: #111111;
+}
+.left img{
+    width: 100px;
+    height: 130px;
+}
+
+
+.nav ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.nav ul li a.active {
+  background-color: var(--light-blue);
+}
+
+  .left p {
+    color: #e0e0e0;
+    font-size: 14.5px;
+    line-height: 1.6;
+    margin-bottom: 40px;
+  }
+
+  .icons {
+    display: flex;
+    gap: 28px;
+    font-size: 22px;
+    color: #fff;
+  }
+
+  .icons a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+
+  .right { flex: 1.3; }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .row {
+    display: flex;
+    gap: 15px;
+  }
+
+  .row input { flex: 1; }
+
+  input, textarea {
+    width: 100%;
+    background: var(--darker-slate);
+    border: none;
+    border-radius: 6px;
+    padding: 14px 15px;
+    color: #fff;
+    font-size: 14px;
+    outline: none;
+  }
+
+  input::placeholder, textarea::placeholder {
+    color: #fff;
+    font-weight: bold;
+    font-size: 13px;
+  }
+
+  textarea {
+    height: 110px;
+    resize: none;
+  }
+
+  .submit-btn {
+    background: var(--darker-slate);
+    color: #fff;
+    border: none;
+    padding: 14px;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+  }
+
+  .submit-btn:hover { background: #4de8e8; color: #000; }
+
+
+
+  @media (max-width: 700px) {
+    .content { flex-direction: column; }
+    .row { flex-direction: column; }
+    .contact { padding: 30px 20px; }}
